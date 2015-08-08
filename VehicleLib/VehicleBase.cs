@@ -28,6 +28,7 @@ namespace VehicleLib
         protected PackageSet interiorSet = null;
         protected FeatureSet factoryFeatureSet = null;
         protected PackageSet optionalFactoryPackage = null;
+        protected PackageSet optionalFactoryTransmissionPackage = null;
         protected PackageSet optionalAccessories = null;
         protected FeatureSet warranty = null;
 
@@ -78,6 +79,7 @@ namespace VehicleLib
             optionalFactoryPackage = new PackageSet();
             optionalAccessories = new PackageSet();
             warranty = new FeatureSet();
+            optionalFactoryTransmissionPackage =  new PackageSet();
         }
 
     }

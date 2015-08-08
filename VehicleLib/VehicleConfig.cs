@@ -77,13 +77,6 @@ namespace VehicleLib
             {
                 if (ModelCode.Equals("Evolution") && (Year.Equals(2013) || Year.Equals(2014) || Year.Equals(2015)))
                 {
-                    //ColorList.Add(colorList.GetCode("WickedWhite"));
-                    //ColorList.Add(colorList.GetCode("RallyRed"));
-                    //ColorList.Add(colorList.GetCode("PhantomBlack"));
-                    //ColorList.Add(colorList.GetCode("OctaneBlue"));
-                    //ColorList.Add(colorList.GetCode("MercuryGray"));
-                    //ColorList.Add(colorList.GetCode("ApexSilver"));
-
                     colorSet.Add(colorList.GetCode("WickedWhite"));
                     colorSet.Add(colorList.GetCode("RallyRed"));
                     colorSet.Add(colorList.GetCode("PhantomBlack"));
@@ -95,9 +88,6 @@ namespace VehicleLib
                     optionalAccessoryPackages.Add(packageList.GetPackage("SideWindDeflectors"));
 
                     warranty.Add(packageList.GetPackage("Warranty"));
-
-                    //standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackFabric"));
-                    //standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackLeather"));
 
                     interiorSet.Add(packageList.GetPackage("BlackFabric"));
                     interiorSet.Add(packageList.GetPackage("BlackLeather"));
@@ -139,6 +129,82 @@ namespace VehicleLib
 
                 }
             }
+            //
+            //
+            //
+            if (ManufacturerCode.Equals("Subaru"))
+            {
+                if (ModelCode.Equals("BRZ") && (Year.Equals(2013) || Year.Equals(2014) || Year.Equals(2015)))
+                {
+                    colorSet.Add(colorList.GetCode("WrBluePearl"));
+                    colorSet.Add(colorList.GetCode("CrystalWhitePearl"));
+                    colorSet.Add(colorList.GetCode("DarkGrayMetallic"));
+                    colorSet.Add(colorList.GetCode("LightningRed"));
+                    colorSet.Add(colorList.GetCode("CrystalBlackSilica"));
+
+                    factoryFeatureSet.Add(packageList.GetPackage("BlackCloth"));
+
+                    DestinationAndHandling = 795;
+
+                    optionalAccessories.Add(packageList.GetPackage("SubWoofer10inch"));
+                    optionalAccessories.Add(packageList.GetPackage("StiAlloyWheels"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzBatteryWarmer"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzCarCover"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzChromeFenderTrim"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzChromeFuelDoorCover"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzEngineBlockHeater"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzFogLightKit"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzRearBumperApplique"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzRearBumperDiffuser"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzDeckLidSpoiler"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzWheelLocks"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzAshTray"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzAshTrayMountingSleeve"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzAutoDimmingMirrorwithCompass"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzAutoDimMirrorAndHL"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzCargoTray"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzInteriorIlluminationKit"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSunshade"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzBRZKeyFob"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSlimLicensePlateFrameMatteBlack"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSlimLicensePlateFrameMatteBlackBRZ"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSlimLicensePlateFramePolishedStainlessSteel"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSlimLicensePlateFramePolishedStainlessSteel2"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzLicensePlateFramePolishedStainlessSteelSubaru"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzParkingOnlySign"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSPTBatteryHoldDownBlue"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSPTBatteryHoldDownSteel"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSPTOilCapBlue"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSPTOilCapSteel"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzValveStemCapsSubaru"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSTIUnderSpoilerRearQuarter"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSTIUnderSpoilerSide"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzStiUnderSpoiler"));
+                    optionalAccessories.Add(packageList.GetPackage("BrzSPTOilCapBlue"));
+
+
+                    if (StyleTrim.Equals("BrzPremium"))
+                    {
+                        BasePrice = 25695;
+                        FeatureList = new string[] { "Direct-injected SUBARU BOXER® engine", "Bluetooth® hands-free connectivity", "Torsen® limited-slip differential" };
+
+                        factoryFeatureSet.Add(packageList.GetPackage("ManualShift6Speed"));
+
+                    }
+
+                    if (StyleTrim.Equals("BrzLimited"))
+                    {
+                        BasePrice = 27695;
+                        FeatureList = new string[] { "Alcantara® and leather-trimmed upholstery", "Rear spoiler", "Keyless Entry and Start" };
+
+                        optionalFactoryPackage.Add(packageList.GetPackage("ManualShift6Speed"));
+                        optionalFactoryPackage.Add(packageList.GetPackage("AutomaticShift6Speed"));
+
+                    }
+
+                }
+            }
+
             //
             //
             //

@@ -35,6 +35,9 @@ namespace VehicleLib
             list.Add(new StyleTrim { Guid = new Guid("338CF5AD-8BAB-4B1B-862B-0FE60CDD3FEF"), Code = "SL", Name = "SL" });
             list.Add(new StyleTrim { Guid = new Guid("063F2256-06FD-442D-BA7E-C2237BE09A81"), Code = "SR", Name = "SR" });
             list.Add(new StyleTrim { Guid = new Guid("E8937A4F-5A51-4154-98B5-B43B1A53CBEA"), Code = "Platinum", Name = "Platinum" });
+            //Subaru
+            list.Add(new StyleTrim { Guid = new Guid("60A83108-7151-4666-8075-F7741E41C9B3"), Code = "BrzPremium", Name = "Premium" });
+            list.Add(new StyleTrim { Guid = new Guid("60A83108-7151-4666-8075-F7741E41C9B3"), Code = "BrzLimited", Name = "Limited" });
             //list.Add(new Package { Guid = new Guid(""), Code = "", Name = "" });
         }
 

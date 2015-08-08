@@ -39,7 +39,12 @@ namespace VehicleLib
             list.Add(new Color { Guid = new Guid("951149DB-9B58-46F1-B5FF-19968A847E72"), Code = "PearlWhite", Name = "Pearl White" });
             list.Add(new Color { Guid = new Guid("97BE2112-E175-4E2C-87BB-0F58711E4BDE"), Code = "DeepBluePearl", Name = "Deep Blue Pearl" });
             list.Add(new Color { Guid = new Guid("913732F3-702A-4CB6-875B-68B80E68807D"), Code = "StormBlue", Name = "Storm Blue" });
-
+            // Subaru
+            list.Add(new Color { Guid = new Guid(""), Code = "WrBluePearl", Name = "WR Blue Pearl" });
+            list.Add(new Color { Guid = new Guid(""), Code = "CrystalWhitePearl", Name = "Crystal White Pearl" });
+            list.Add(new Color { Guid = new Guid(""), Code = "DarkGrayMetallic", Name = "Dark Gray Metallic" });
+            list.Add(new Color { Guid = new Guid(""), Code = "LightningRed", Name = "Lightning Red" });
+            list.Add(new Color { Guid = new Guid(""), Code = "CrystalBlackSilica", Name = "Crystal Black Silica" });
             //list.Add(new Color { Guid = new Guid(""), Code = "", Name = "" });
         }
 
