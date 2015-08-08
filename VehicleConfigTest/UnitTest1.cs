@@ -8,10 +8,8 @@ namespace VehicleConfigTest
     [TestClass]
     public class UnitTest1
     {
-        const string sel1 = "SightAndSound";
-
         [TestMethod]
-        public void TestMethod1()
+        public void VehicleListCountTest()
         {
             List<Vehicle> vehicles = new List<Vehicle>();
             vehicles.Add(new Vehicle("Mitsubishi", "Evolution", "GSR", 2015) );
@@ -22,16 +20,23 @@ namespace VehicleConfigTest
             vehicles.Add(new Vehicle("Nissan", "Maxima", "SR", 2015));
             vehicles.Add(new Vehicle("Nissan", "Maxima", "Platinum", 2015));
 
-            Vehicle LancerEvolutionGSR = vehicles[0];
+            Assert.AreEqual(vehicles.Count, 7);
+        }
+
+        [TestMethod]
+        public void EvolutionGsrMSRPTest()
+        {
+            Vehicle LancerEvolutionGSR = new Vehicle("Mitsubishi", "Evolution", "GSR", 2015);
 
             LancerEvolutionGSR.GetOptionalFactoryPackage().SelectMulti("SightAndSound", "PremiumPackage");
             LancerEvolutionGSR.GetInteriorOptionsFactoryPackage().SelectOne("BlackLeather");
             LancerEvolutionGSR.GetColorOptionsFactoryPackage().SelectOne("RallyRed");
             LancerEvolutionGSR.GetAccessories().SelectMulti("InteriorPackageGsr", "NavigationSystemPackage");
-            
+
             VehicleSummary summary = LancerEvolutionGSR.GenerateSummary();
 
-            Assert.AreEqual(vehicles.Count, 7);
+            Assert.AreEqual(summary.MSRP, 45250.0);
         }
+    
     }
 }
