@@ -7,20 +7,43 @@ using System.Threading.Tasks;
 namespace VehicleLib
 {
 
-    public abstract class ItemSet<T>
+    public abstract class FeatureSetBase<T>
     {
         protected List<T> list = null;
-        public ItemSet() 
+
+        public FeatureSetBase()
         {
             list = new List<T>(); 
         }
         public abstract void Add(T item);
+    }
+
+    public abstract class ItemChooserSet<T> : FeatureSetBase<T>
+    {
+        public ItemChooserSet()
+            : base()
+        {
+            
+        }
         public abstract Boolean SelectOne(string code);
         public abstract Boolean SelectMulti(params string[] codes);
         public abstract Boolean DeselectMulti(params string[] codes);
     }
 
-    public class PackageSet : ItemSet<Package>
+    public class FeatureSet : FeatureSetBase<Package>
+    {
+        public FeatureSet() : base()
+        {
+
+        }
+
+        public override void Add(Package item)
+        {
+            list.Add(item);
+        }
+    }
+
+    public class PackageSet : ItemChooserSet<Package>
     {
 
         public PackageSet() : base()
@@ -83,7 +106,7 @@ namespace VehicleLib
 
     }
 
-    public class ColorSet : ItemSet<Color>
+    public class ColorSet : ItemChooserSet<Color>
     {
         public ColorSet() : base()
         {

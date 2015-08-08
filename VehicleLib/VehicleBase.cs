@@ -24,7 +24,9 @@ namespace VehicleLib
 
         protected ColorSet colorSet = null;
         protected PackageSet interiorSet = null;
-
+        protected FeatureSet factoryFeatureSet = null;
+        protected PackageSet optionalFactoryPackage = null;
+        protected PackageSet optionalAccessories = null;
 
         protected ManufacturerList ml = null;
         protected ModelList modelList = null;
@@ -64,7 +66,11 @@ namespace VehicleLib
             optionalFactoryPackages = new List<Package>();
             optionalAccessoryPackages = new List<Package>();
 
-            colorSet = new ColorSet();  
+            colorSet = new ColorSet();
+            factoryFeatureSet = new FeatureSet();
+            interiorSet = new PackageSet();
+            optionalFactoryPackage = new PackageSet();
+            optionalAccessories = new PackageSet();
         }
 
     }
