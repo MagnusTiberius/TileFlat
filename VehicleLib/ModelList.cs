@@ -13,6 +13,7 @@ namespace VehicleLib
 
         public ModelList()
         {
+            list = new List<Model>();
             //Audi
             list.Add(new Model { ModelGuid = new Guid("AB82DFC5-F3FB-447B-9602-F369B33E4EAA"), Code = "A3", Name = "A3" });
             list.Add(new Model { ModelGuid = new Guid("6E212EA8-B05D-4011-B094-2FC9D155F120"), Code = "A4", Name = "A4" });

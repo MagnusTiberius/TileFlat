@@ -14,6 +14,8 @@ namespace VehicleLib
 
         public ManufacturerList()
         {
+            list = new List<Manufacturer>();
+
             list.Add(new Manufacturer { manufacturerID = new Guid("0acb2b4a-885b-46a9-b567-10cf0696eb90"), Code="Ford", Name="Ford" });
             list.Add(new Manufacturer { manufacturerID = new Guid("169958af-f2a2-4b86-8798-0ddd941eccb2"), Code = "Dodge", Name = "Dodge" });
             list.Add(new Manufacturer { manufacturerID = new Guid("dcc397b3-a421-482b-b3a3-d18d56841354"), Code = "Tesla", Name = "Tesla" });

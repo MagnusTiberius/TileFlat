@@ -25,7 +25,7 @@ namespace VehicleLib
             Init();
         }
 
-        private void Init()
+        protected void Init()
         {
             ml = new ManufacturerList();
             manufacturer = ml.GetCode(ManufacturerCode);
@@ -36,7 +36,7 @@ namespace VehicleLib
             ConfigIt();
         }
 
-        private void ConfigIt()
+        protected void ConfigIt()
         {
             ColorList colorList = new ColorList();
             PackageList packageList = new PackageList();

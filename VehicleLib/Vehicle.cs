@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VehicleLib
 {
-    public class Vehicle : VehicleBase
+    public class Vehicle : VehicleConfig
     {
 
         public Vehicle() : base()

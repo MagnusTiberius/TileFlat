@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileFlat", "TileFlat\TileFl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleLib", "VehicleLib\VehicleLib.csproj", "{6C7A1C02-0E2E-4F97-8637-233C4155E588}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleConfigTest", "VehicleConfigTest\VehicleConfigTest.csproj", "{E373BD75-7415-4704-8549-520526125083}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6C7A1C02-0E2E-4F97-8637-233C4155E588}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C7A1C02-0E2E-4F97-8637-233C4155E588}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C7A1C02-0E2E-4F97-8637-233C4155E588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E373BD75-7415-4704-8549-520526125083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E373BD75-7415-4704-8549-520526125083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E373BD75-7415-4704-8549-520526125083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E373BD75-7415-4704-8549-520526125083}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

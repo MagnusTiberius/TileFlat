@@ -32,8 +32,7 @@ namespace VehicleLib
         
         public VehicleBase()
         {
-
-
+            Init();
         }
 
         public VehicleBase(string manufacturerCode, string modelCode, string styleTrim, int year)
@@ -42,6 +41,7 @@ namespace VehicleLib
             ModelCode = modelCode;
             StyleTrim = styleTrim;
             Year = year;
+            Init();
         }
 
         public VehicleBase(string manufacturerCode, string modelCode, string styleTrim)
@@ -50,9 +50,17 @@ namespace VehicleLib
             ModelCode = modelCode;
             StyleTrim = styleTrim;
             Year = DateTime.Today.Year;
+            Init();
         }
 
-
+        private void Init()
+        {
+            standardPackages = new List<Package>();
+            standardExteriorOptionalPackages = new List<Package>();
+            standardInteriorOptionalPackages = new List<Package>();
+            optionalFactoryPackages = new List<Package>();
+            optionalAccessoryPackages = new List<Package>();
+        }
 
     }
 }
