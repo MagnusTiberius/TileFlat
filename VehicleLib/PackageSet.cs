@@ -116,6 +116,16 @@ namespace VehicleLib
             return false;
         }
 
+        public float GetTotal()
+        {
+            float total = 0;
+            foreach (Package itm in list)
+            {
+                total += itm.Price;
+            }
+            return total;
+        }
+
     }
 
     public class ColorSet : ItemChooserSet<Color>

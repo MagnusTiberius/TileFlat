@@ -20,6 +20,8 @@ namespace VehicleLib
         protected float BasePrice;
         protected float TotalPackagePrice;
         protected float NetPrice;
+        protected float DestinationAndHandling;
+
         protected string[] FeatureList;
 
         protected ColorSet colorSet = null;
@@ -27,6 +29,7 @@ namespace VehicleLib
         protected FeatureSet factoryFeatureSet = null;
         protected PackageSet optionalFactoryPackage = null;
         protected PackageSet optionalAccessories = null;
+        protected FeatureSet warranty = null;
 
         protected ManufacturerList ml = null;
         protected ModelList modelList = null;
@@ -74,6 +77,7 @@ namespace VehicleLib
             interiorSet = new PackageSet();
             optionalFactoryPackage = new PackageSet();
             optionalAccessories = new PackageSet();
+            warranty = new FeatureSet();
         }
 
     }

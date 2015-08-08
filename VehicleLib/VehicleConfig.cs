@@ -46,10 +46,26 @@ namespace VehicleLib
             return interiorSet;
         }
         
-
+        public PackageSet GetAccessories()
+        {
+            return optionalAccessories;
+        }
+        
         public PackageSet GetOptionalFactoryPackage()
         {
             return optionalFactoryPackage;
+        }
+
+        public VehicleSummary GenerateSummary()
+        {
+            VehicleSummary summary = new VehicleSummary();
+
+            summary.FactoryPackages = optionalFactoryPackage.GetTotal();
+            summary.Accessories = optionalAccessories.GetTotal();
+            summary.DestinationAndHandlingFees = DestinationAndHandling;
+            summary.BasePrice = BasePrice;
+            summary.MSRP = summary.FactoryPackages + summary.Accessories + summary.DestinationAndHandlingFees + summary.BasePrice;
+            return summary;
         }
 
         protected void ConfigIt()
@@ -78,11 +94,15 @@ namespace VehicleLib
                     optionalAccessoryPackages.Add(packageList.GetPackage("RearParkAssistSensors"));
                     optionalAccessoryPackages.Add(packageList.GetPackage("SideWindDeflectors"));
 
+                    warranty.Add(packageList.GetPackage("Warranty"));
+
                     //standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackFabric"));
                     //standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackLeather"));
 
                     interiorSet.Add(packageList.GetPackage("BlackFabric"));
                     interiorSet.Add(packageList.GetPackage("BlackLeather"));
+
+                    DestinationAndHandling = 810;
 
                     if (StyleTrim.Equals("GSR"))
                     {

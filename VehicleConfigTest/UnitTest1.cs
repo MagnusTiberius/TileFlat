@@ -22,9 +22,14 @@ namespace VehicleConfigTest
             vehicles.Add(new Vehicle("Nissan", "Maxima", "SR", 2015));
             vehicles.Add(new Vehicle("Nissan", "Maxima", "Platinum", 2015));
 
-            vehicles[0].GetOptionalFactoryPackage().SelectMulti("SightAndSound", "PremiumPackage");
-            vehicles[0].GetInteriorOptionsFactoryPackage().SelectOne("BlackLeather");
-            vehicles[0].GetColorOptionsFactoryPackage().SelectOne("RallyRed");
+            Vehicle LancerEvolutionGSR = vehicles[0];
+
+            LancerEvolutionGSR.GetOptionalFactoryPackage().SelectMulti("SightAndSound", "PremiumPackage");
+            LancerEvolutionGSR.GetInteriorOptionsFactoryPackage().SelectOne("BlackLeather");
+            LancerEvolutionGSR.GetColorOptionsFactoryPackage().SelectOne("RallyRed");
+            LancerEvolutionGSR.GetAccessories().SelectMulti("InteriorPackageGsr", "NavigationSystemPackage");
+            
+            VehicleSummary summary = LancerEvolutionGSR.GenerateSummary();
 
             Assert.AreEqual(vehicles.Count, 7);
         }
