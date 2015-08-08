@@ -12,6 +12,7 @@ namespace VehicleLib
         public string Code;
         public string Name;
         public string Description;
+        public Boolean IsSelected;
     }
 
     public class ColorList

@@ -45,16 +45,28 @@ namespace VehicleLib
             {
                 if (ModelCode.Equals("Evolution") && (Year.Equals(2013) || Year.Equals(2014) || Year.Equals(2015)))
                 {
-                    ColorList.Add(colorList.GetCode("WickedWhite"));
-                    ColorList.Add(colorList.GetCode("RallyRed"));
-                    ColorList.Add(colorList.GetCode("PhantomBlack"));
-                    ColorList.Add(colorList.GetCode("OctaneBlue"));
-                    ColorList.Add(colorList.GetCode("MercuryGray"));
-                    ColorList.Add(colorList.GetCode("ApexSilver"));
+                    //ColorList.Add(colorList.GetCode("WickedWhite"));
+                    //ColorList.Add(colorList.GetCode("RallyRed"));
+                    //ColorList.Add(colorList.GetCode("PhantomBlack"));
+                    //ColorList.Add(colorList.GetCode("OctaneBlue"));
+                    //ColorList.Add(colorList.GetCode("MercuryGray"));
+                    //ColorList.Add(colorList.GetCode("ApexSilver"));
+
+                    colorSet.Add(colorList.GetCode("WickedWhite"));
+                    colorSet.Add(colorList.GetCode("RallyRed"));
+                    colorSet.Add(colorList.GetCode("PhantomBlack"));
+                    colorSet.Add(colorList.GetCode("OctaneBlue"));
+                    colorSet.Add(colorList.GetCode("MercuryGray"));
+                    colorSet.Add(colorList.GetCode("ApexSilver"));
 
                     optionalAccessoryPackages.Add(packageList.GetPackage("RearParkAssistSensors"));
                     optionalAccessoryPackages.Add(packageList.GetPackage("SideWindDeflectors"));
 
+                    //standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackFabric"));
+                    //standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackLeather"));
+
+                    interiorSet.Add(packageList.GetPackage("BlackFabric"));
+                    interiorSet.Add(packageList.GetPackage("BlackLeather"));
 
                     if (StyleTrim.Equals("GSR"))
                     {
@@ -62,8 +74,6 @@ namespace VehicleLib
                         FeatureList = new string[] { "291-horsepower turbocharged 2.0-liter DOHC MIVEC engine", "Super-All Wheel Control", "18x8.5\" Enkei® alloy wheel with 245/40 R18 93W Yokohama® ADVAN® high-performance tires", "BREMBO® high performance braking system", "Active Yaw Control (AYC)" };
 
                         standardPackages.Add(packageList.GetPackage("FiveSpeedManualTransmission"));
-                        standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackFabric"));
-                        standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackLeather"));
 
                         optionalFactoryPackages.Add(packageList.GetPackage("SightAndSound"));
                         optionalFactoryPackages.Add(packageList.GetPackage("PremiumPackage"));
@@ -81,8 +91,6 @@ namespace VehicleLib
                         FeatureList = new string[] { "291-horsepower turbocharged 2.0-liter DOHC MIVEC engine", "Twin Clutch Sportronic® Shift Transmission", "Super-All Wheel Control", "Front and rear suspension with Eibach® springs and Bilstein® shock absorbers, with stabilizer bar", "BREMBO® high performance braking system" };
 
                         standardPackages.Add(packageList.GetPackage("TwinClutchSportShiftTransmission"));
-                        standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackFabric"));
-                        standardInteriorOptionalPackages.Add(packageList.GetPackage("BlackLeather"));
 
                         optionalFactoryPackages.Add(packageList.GetPackage("TouringPackage"));
 
@@ -102,23 +110,26 @@ namespace VehicleLib
             {
                 if (ModelCode.Equals("Maxima") && (Year.Equals(2015) || Year.Equals(2016)  ))
                 {
-                    ColorList.Add(colorList.GetCode("CoulisRed"));
-                    ColorList.Add(colorList.GetCode("BordeuxBlack"));
-                    ColorList.Add(colorList.GetCode("BrilliantSilver"));
-                    ColorList.Add(colorList.GetCode("GunMetallic"));
-                    ColorList.Add(colorList.GetCode("ForgedBronze"));
-                    ColorList.Add(colorList.GetCode("SuperBlack"));
-                    ColorList.Add(colorList.GetCode("PearlWhite"));
-                    ColorList.Add(colorList.GetCode("DeepBluePearl"));
-                    ColorList.Add(colorList.GetCode("StormBlue"));
+                    colorSet.Add(colorList.GetCode("CoulisRed"));
+                    colorSet.Add(colorList.GetCode("BordeuxBlack"));
+                    colorSet.Add(colorList.GetCode("BrilliantSilver"));
+                    colorSet.Add(colorList.GetCode("GunMetallic"));
+                    colorSet.Add(colorList.GetCode("ForgedBronze"));
+                    colorSet.Add(colorList.GetCode("SuperBlack"));
+                    colorSet.Add(colorList.GetCode("PearlWhite"));
+                    colorSet.Add(colorList.GetCode("DeepBluePearl"));
+                    colorSet.Add(colorList.GetCode("StormBlue"));
 
                     optionalAccessoryPackages.Add(packageList.GetPackage("CashmereCloth"));
                     optionalAccessoryPackages.Add(packageList.GetPackage("CharcoalCloth"));
 
                     standardPackages.Add(packageList.GetPackage("Engine300hp3literDOHC24valveV6"));
                     standardPackages.Add(packageList.GetPackage("XTronicCVT"));
-                    standardInteriorOptionalPackages.Add(packageList.GetPackage("CashmereCloth"));
-                    standardInteriorOptionalPackages.Add(packageList.GetPackage("CharcoalCloth"));
+                    //standardInteriorOptionalPackages.Add(packageList.GetPackage("CashmereCloth"));
+                    //standardInteriorOptionalPackages.Add(packageList.GetPackage("CharcoalCloth"));
+
+                    interiorSet.Add(packageList.GetPackage("CashmereCloth"));
+                    interiorSet.Add(packageList.GetPackage("CharcoalCloth"));
 
                     optionalFactoryPackages.Add(packageList.GetPackage("PremiumSpoiler"));
                     optionalFactoryPackages.Add(packageList.GetPackage("SplashGuards"));

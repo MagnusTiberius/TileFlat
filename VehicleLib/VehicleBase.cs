@@ -11,16 +11,19 @@ namespace VehicleLib
         protected Manufacturer manufacturer = null;
         protected Model model = null;
         protected StyleTrim styleTrim = null;
-        protected List<Color> ColorList = new List<Color>();
+        //protected List<Color> ColorList = new List<Color>();
         protected List<Package> standardPackages = null;
         protected List<Package> standardExteriorOptionalPackages = null;
-        protected List<Package> standardInteriorOptionalPackages = null;
+        //protected List<Package> standardInteriorOptionalPackages = null;
         protected List<Package> optionalFactoryPackages = null;
         protected List<Package> optionalAccessoryPackages = null;
         protected float BasePrice;
         protected float TotalPackagePrice;
         protected float NetPrice;
         protected string[] FeatureList;
+
+        protected ColorSet colorSet = null;
+        protected PackageSet interiorSet = null;
 
 
         protected ManufacturerList ml = null;
@@ -57,9 +60,11 @@ namespace VehicleLib
         {
             standardPackages = new List<Package>();
             standardExteriorOptionalPackages = new List<Package>();
-            standardInteriorOptionalPackages = new List<Package>();
+            //standardInteriorOptionalPackages = new List<Package>();
             optionalFactoryPackages = new List<Package>();
             optionalAccessoryPackages = new List<Package>();
+
+            colorSet = new ColorSet();  
         }
 
     }

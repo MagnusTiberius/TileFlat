@@ -15,7 +15,7 @@ namespace VehicleLib
         public string[] FeatureList;
         public Boolean Enabled;
         public Boolean Visible;
-        public Boolean Selected;
+        public Boolean IsSelected;
         public float Price;
     }
 
