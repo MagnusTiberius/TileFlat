@@ -37,6 +37,25 @@ namespace VehicleConfigTest
 
             Assert.AreEqual(summary.MSRP, 45250.0);
         }
+
+        [TestMethod]
+        public void SubabruBrzMSRPTest1()
+        {
+            Vehicle subaruBrz = new Vehicle("Subaru", "BRZ", "BrzPremium", 2015);
+            subaruBrz.GetColorOptionsFactoryPackage().SelectOne("WrBluePearl");
+            VehicleSummary summary = subaruBrz.GenerateSummary();
+            Assert.AreEqual((int)summary.MSRP, (int)33899);
+        }
+
+        [TestMethod]
+        public void SubabruBrzMSRPTest2()
+        {
+            Vehicle subaruBrz = new Vehicle("Subaru", "BRZ", "BrzLimited", 2015);
+            subaruBrz.GetColorOptionsFactoryPackage().SelectOne("WrBluePearl");
+            VehicleSummary summary = subaruBrz.GenerateSummary();
+            Assert.AreEqual((int)summary.MSRP, (int)36999);
+        }
     
+
     }
 }
