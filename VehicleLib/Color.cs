@@ -40,11 +40,11 @@ namespace VehicleLib
             list.Add(new Color { Guid = new Guid("97BE2112-E175-4E2C-87BB-0F58711E4BDE"), Code = "DeepBluePearl", Name = "Deep Blue Pearl" });
             list.Add(new Color { Guid = new Guid("913732F3-702A-4CB6-875B-68B80E68807D"), Code = "StormBlue", Name = "Storm Blue" });
             // Subaru
-            list.Add(new Color { Guid = new Guid(""), Code = "WrBluePearl", Name = "WR Blue Pearl" });
-            list.Add(new Color { Guid = new Guid(""), Code = "CrystalWhitePearl", Name = "Crystal White Pearl" });
-            list.Add(new Color { Guid = new Guid(""), Code = "DarkGrayMetallic", Name = "Dark Gray Metallic" });
-            list.Add(new Color { Guid = new Guid(""), Code = "LightningRed", Name = "Lightning Red" });
-            list.Add(new Color { Guid = new Guid(""), Code = "CrystalBlackSilica", Name = "Crystal Black Silica" });
+            list.Add(new Color { Guid = new Guid("14A73167-A687-4E51-BB2B-53A9FECEC6E2"), Code = "WrBluePearl", Name = "WR Blue Pearl" });
+            list.Add(new Color { Guid = new Guid("64317699-2A25-4974-BE92-1D807D210D83"), Code = "CrystalWhitePearl", Name = "Crystal White Pearl" });
+            list.Add(new Color { Guid = new Guid("876611C6-5D67-4F28-BB58-0A556C72C0CD"), Code = "DarkGrayMetallic", Name = "Dark Gray Metallic" });
+            list.Add(new Color { Guid = new Guid("F0CFE228-818F-4E98-98F7-3FD5255743AA"), Code = "LightningRed", Name = "Lightning Red" });
+            list.Add(new Color { Guid = new Guid("6969470D-4BC6-460B-AF0E-E6444054F6C5"), Code = "CrystalBlackSilica", Name = "Crystal Black Silica" });
             //list.Add(new Color { Guid = new Guid(""), Code = "", Name = "" });
         }
 
