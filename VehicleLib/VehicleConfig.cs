@@ -36,6 +36,22 @@ namespace VehicleLib
             ConfigIt();
         }
 
+        public ColorSet GetColorOptionsFactoryPackage()
+        {
+            return colorSet;
+        }
+
+        public PackageSet GetInteriorOptionsFactoryPackage()
+        {
+            return interiorSet;
+        }
+        
+
+        public PackageSet GetOptionalFactoryPackage()
+        {
+            return optionalFactoryPackage;
+        }
+
         protected void ConfigIt()
         {
             ColorList colorList = new ColorList();

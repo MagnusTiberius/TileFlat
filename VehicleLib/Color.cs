@@ -54,6 +54,24 @@ namespace VehicleLib
             }
             return null;
         }
+
+        public Boolean SelectOne(string code)
+        {
+            foreach (Color itm in list)
+            {
+                itm.IsSelected = false;
+            }
+
+            foreach (Color itm in list)
+            {
+                if (itm.Code.Equals(code))
+                {
+                    itm.IsSelected = true;
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
 

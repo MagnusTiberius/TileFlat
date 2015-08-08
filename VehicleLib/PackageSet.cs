@@ -56,6 +56,18 @@ namespace VehicleLib
             list.Add(item);
         }
 
+        public Package GetPackage(string code)
+        {
+            foreach (Package itm in list)
+            {
+                if (itm.Code.Equals(code))
+                {
+                    return itm;
+                }
+            }
+            return null;
+        }
+
         public override Boolean SelectOne(string code)
         {
             foreach (Package itm in list)

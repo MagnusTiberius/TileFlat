@@ -30,11 +30,14 @@ namespace VehicleLib
 
         protected ManufacturerList ml = null;
         protected ModelList modelList = null;
+
         public string ManufacturerCode { get; set; }
         public string ModelCode { get; set; }
         public string StyleTrim { get; set; }
         public int Year { get; set; }
         
+        
+
         public VehicleBase()
         {
             Init();
